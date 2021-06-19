@@ -21,7 +21,7 @@ struct ContentView: View {
             //kelvin to kelvin
             return temp
         case 1:
-            //celcius to kelvin
+            //celsius to kelvin
             return temp + 273.15
         case 2:
             //fahrenheit to kelvin
@@ -39,7 +39,7 @@ struct ContentView: View {
             //output kelvin
             return kelvinTemp
         case 1:
-            //output celcius
+            //output celsius
             return kelvinTemp - 273.15
         case 2:
             //output fahrenheit
