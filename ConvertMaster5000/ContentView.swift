@@ -28,7 +28,7 @@ struct ContentView: View {
             return (temp + 459.67) * 5 / 9
         
         default:
-            // should really return nil but not gonna make it an optional for this excercise 
+            // should really return nil but not gonna make it an optional for this excercise
             return 0
         }
     }
@@ -73,14 +73,14 @@ struct ContentView: View {
             }
             Section(header: Text("Converted Temperature")){
                 Text("\(convertedTemp, specifier: "%.1f") °")
-            }
+            
             Picker("Units", selection: $outputUnit){
                 ForEach(0 ..< tempUnits.count) {
                     Text("\(self.tempUnits[$0])")
                 }
             }
             .pickerStyle(SegmentedPickerStyle())
-        }
+            }   }
     }
 }
 
