@@ -28,6 +28,7 @@ struct ContentView: View {
             return (temp + 459.67) * 5 / 9
         
         default:
+            // should really return nil but not gonna make it an optional for this excercise 
             return 0
         }
     }
@@ -45,6 +46,7 @@ struct ContentView: View {
             return kelvinTemp * 1.8 - 459.67
         
         default:
+            // should really return nil but not gonna make it an optional for this excercise
             return 0
             
         }
